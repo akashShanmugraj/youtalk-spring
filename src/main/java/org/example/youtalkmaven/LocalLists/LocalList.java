@@ -1,4 +1,4 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.LocalLists;
 import java.util.ArrayList;
 
 
@@ -7,7 +7,7 @@ public class LocalList{
     protected ArrayList<Item> items;
 
 
-    LocalList(String id){
+    public LocalList(String id){
         this.id = id;
         this.items = new ArrayList<Item>();
     }

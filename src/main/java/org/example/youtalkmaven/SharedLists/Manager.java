@@ -1,4 +1,4 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.SharedLists;
 
 public class Manager extends Collaborator{
 

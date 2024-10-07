@@ -1,6 +1,9 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.SharedLists;
 
 import java.util.Map;
+
+import org.example.youtalkmaven.LocalLists.Item;
+import org.example.youtalkmaven.LocalLists.LocalList;
 
 public class SharedList {
     

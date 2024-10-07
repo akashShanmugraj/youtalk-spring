@@ -1,5 +1,6 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.SharedLists;
 
+import org.example.youtalkmaven.LocalLists.Item;
 
 public class Collaborator extends Viewer {
     private String id;

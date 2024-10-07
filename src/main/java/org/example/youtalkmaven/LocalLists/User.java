@@ -1,5 +1,7 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.LocalLists;
 import java.util.ArrayList;
+
+import org.example.youtalkmaven.SharedLists.Account;
 
 
 public class User{

@@ -1,20 +1,21 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.LocalLists;
 
-public class Routine extends LocalList {
+public class Stack extends LocalList {
 
-    Routine(String id) {
+    Stack(String id) {
         super(id);
         //TODO Auto-generated constructor stub
     }
     
-    public void addRoutine(Item item) {
+    public void push(Item item) {
         this.addItem(item);
     }
 
-    public Item removeRoutine() {
+    public Item pop() {
         Item item = this.items.get(this.items.size()-1);
         this.items.remove(this.items.size()-1);
-        addRoutine(item);
         return item;
     }
+
+    
 }

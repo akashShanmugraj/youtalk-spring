@@ -1,4 +1,4 @@
-package org.example.youtalkmaven;
+package org.example.youtalkmaven.LocalLists;
 
 public class Item {
     private String id;
