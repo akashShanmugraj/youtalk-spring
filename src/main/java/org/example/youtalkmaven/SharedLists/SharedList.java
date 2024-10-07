@@ -7,12 +7,12 @@ import org.example.youtalkmaven.LocalLists.LocalList;
 
 public class SharedList {
     
-    private String id;
+    private long id;
     private LocalList list;
     private Map<Account, Permissions> permissions;
     private Account owner;
 
-    SharedList(String id, Account owner) {
+    SharedList(long id, Account owner) {
         this.id = id;
         this.owner = owner;
         this.list = new LocalList(id);

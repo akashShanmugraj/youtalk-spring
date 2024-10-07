@@ -2,7 +2,7 @@ package org.example.youtalkmaven.SharedLists;
 
 public class Manager extends Collaborator{
 
-    Manager(String id,SharedList list, Account account) {
+    Manager(long id,SharedList list, Account account) {
         super(id,account,list);
         this.list.ChangePermissions(account, Manager.this);
     }

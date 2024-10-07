@@ -2,7 +2,7 @@ package org.example.youtalkmaven.LocalLists;
 
 public class Queue extends LocalList {
 
-    Queue(String id) {
+    Queue(long id) {
         super(id);
         //TODO Auto-generated constructor stub
     }

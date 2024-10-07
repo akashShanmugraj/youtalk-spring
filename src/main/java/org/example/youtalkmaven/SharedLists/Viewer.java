@@ -2,11 +2,11 @@ package org.example.youtalkmaven.SharedLists;
 
 
 public class Viewer implements Permissions{
-    private String id;
+    private long id;
     protected SharedList list;
 
 
-    Viewer(String id, SharedList list,Account account) {
+    Viewer(long id, SharedList list,Account account) {
         this.id = id;
         this.list = list;
         list.AddUser(account);

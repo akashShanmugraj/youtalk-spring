@@ -2,7 +2,7 @@ package org.example.youtalkmaven.LocalLists;
 
 public class Routine extends LocalList {
 
-    Routine(String id) {
+    Routine(long id) {
         super(id);
         //TODO Auto-generated constructor stub
     }

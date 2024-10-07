@@ -3,9 +3,9 @@ package org.example.youtalkmaven.SharedLists;
 import org.example.youtalkmaven.LocalLists.Item;
 
 public class Collaborator extends Viewer {
-    private String id;
+    private long id;
 
-    Collaborator(String id, Account account,SharedList list) {
+    Collaborator(long id, Account account,SharedList list) {
         super(id,list, account);
         this.list.ChangePermissions(account, Collaborator.this);
     }

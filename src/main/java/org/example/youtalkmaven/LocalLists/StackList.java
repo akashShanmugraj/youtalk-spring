@@ -1,8 +1,10 @@
 package org.example.youtalkmaven.LocalLists;
 
-public class Stack extends LocalList {
+import java.util.List;
 
-    Stack(String id) {
+public class StackList extends LocalList {
+
+    public StackList(long id) {
         super(id);
         //TODO Auto-generated constructor stub
     }
@@ -16,6 +18,8 @@ public class Stack extends LocalList {
         this.items.remove(this.items.size()-1);
         return item;
     }
-
-    
+  
+    public List<Item> getItems() {
+        return this.items;
+    }
 }
