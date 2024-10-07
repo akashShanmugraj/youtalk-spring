@@ -8,17 +8,25 @@ import org.example.youtalkmaven.LocalLists.LocalList;
 public class SharedList {
     
     private long id;
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     private LocalList list;
     private Map<Account, Permissions> permissions;
     private Account owner;
 
-    SharedList(long id, Account owner) {
+    public SharedList(long id, Account owner) {
         this.id = id;
         this.owner = owner;
         this.list = new LocalList(id);
     }
 
-    void AddUser(Account account) {
+    public void AddUser(Account account) {
         this.permissions.put(account, new Viewer(this.id,SharedList.this, account));
     }
 
@@ -26,16 +34,18 @@ public class SharedList {
         this.permissions.remove(account);
     }
 
-    void ChangePermissions(Account account, Permissions permissions) {
-        this.permissions.put(account, permissions);
+    public void ChangePermissions(Account account, Permissions permissions2) {
+        this.permissions.put(account, permissions2);
     }
 
-    void addItem(Item item) {
+    public void addItem(Item item) {
         this.list.addItem(item);
     }
 
-    void removeItem(Item item) {
+    public void removeItem(Item item) {
         this.list.removeItem(item);
     }
+
+
 
 }

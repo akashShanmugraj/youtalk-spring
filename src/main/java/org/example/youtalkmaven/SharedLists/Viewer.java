@@ -6,7 +6,7 @@ public class Viewer implements Permissions{
     protected SharedList list;
 
 
-    Viewer(long id, SharedList list,Account account) {
+    public Viewer(long id, SharedList list,Account account) {
         this.id = id;
         this.list = list;
         list.AddUser(account);
